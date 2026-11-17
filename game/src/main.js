@@ -58,8 +58,6 @@ function runGame() {
   let waveAnnounced = 0;
   let pendingActions = 0;
   world.reset();
-  // Debug handle for play-testing (read-only view of the live state).
-  window.__emberfall = { world, get screen() { return screen; }, get best() { return best; } };
 
   function announce(message) { status.textContent = message; }
 
